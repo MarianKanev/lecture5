@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Currency Convertor</title>
+        <script src="{{ url_for('static', filename='index.js')}}"></script>
+    </head>
+
+    <body> 
+        <form id="form"> 
+            <input type="text" id="currency" autocomplete="off" autofocus placeholder="Currency">
+            <input type="submit" value="Get Exchange Rate">
+        </form>
+        <br>
+        <div id="result"></div>
+            
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--- Test Arrow Functions available in ES6 version of javascript -->
+<html>
+    <head>
+        <script>
+
+            document.addEventListener('DOMContentLoaded', () => {
+               
+               // Have each button change color of the heading
+                document.querySelectorAll('.color-change').forEach(button => {
+                    button.onclick = () => {
+                        document.querySelector('#hello').style.color = button.dataset.color;
+                    };
+                });
+            });
+
+        </script>
+
+        <title>My website</title>
+    </head>
+
+    <body>
+        <h1 id="hello">Hello!</h1>
+        <button class="color-change" data-color="red">Red</button>
+        <button class="color-change" data-color="blue">Blue</button>
+        <button class="color-change" data-color="green">Green</button>
+
+
+    </body>
+
+</html>
